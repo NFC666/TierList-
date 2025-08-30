@@ -10,6 +10,7 @@
 
     <ItemGroup>
         <AvaloniaResource Include="Assets\**"/>
+        <AvaloniaResource Include="images\tier_lis.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -26,5 +27,9 @@
         <PackageReference Include="IconPacks.Avalonia" Version="1.2.0" />
         <PackageReference Include="IconPacks.Avalonia.FontAwesome" Version="1.2.0" />
         <PackageReference Include="ThemeEditor.Controls.ColorPicker" Version="11.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\Imgs\" />
     </ItemGroup>
 </Project>
