@@ -25,8 +25,11 @@ _前言：之前在b站总是看到这种排行榜视频，但是发现各种人
 下面可以添加新的等级，添加的等级会自动添加到等级栏的末尾。可以自由选择你喜欢的颜色。
 
 ### 1.3 添加图片窗口
+
 ![1_add_images_window.png](BestToGarbage/images/1_add_images_window.png)
+
 选择文件并添加，可以选择多个文件
+
 ![1_add_images_window_2.png](BestToGarbage/images/1_add_images_window_2.png)
 右键可以选择在主界面上显示。
 
