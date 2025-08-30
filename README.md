@@ -1,6 +1,7 @@
 ﻿# **TierList**从夯到拉排行
 _前言：之前在b站总是看到这种排行榜视频，但是发现各种人制作情况却参差不一，有些想法出众的作者，却因为工具的问题导致传达不出来他想表达的含义，于是我开发了这款软件。
 
+蓝凑云下载链接：https://wwmh.lanzoul.com/iyfOo34z41sb
 
 ![](BestToGarbage/images/tier_lis.png)
 
@@ -31,6 +32,7 @@ _前言：之前在b站总是看到这种排行榜视频，但是发现各种人
 选择文件并添加，可以选择多个文件
 
 ![1_add_images_window_2.png](BestToGarbage/images/1_add_images_window_2.png)
+
 右键可以选择在主界面上显示。
 
 ## 2. 软件的实战
