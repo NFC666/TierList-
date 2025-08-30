@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestToGarbage", "BestToGarbage\BestToGarbage.csproj", "{A46F9F4F-F0AE-425B-8586-B93CD3E9B129}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A46F9F4F-F0AE-425B-8586-B93CD3E9B129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46F9F4F-F0AE-425B-8586-B93CD3E9B129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46F9F4F-F0AE-425B-8586-B93CD3E9B129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46F9F4F-F0AE-425B-8586-B93CD3E9B129}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

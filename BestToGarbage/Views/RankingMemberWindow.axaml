@@ -1,0 +1,72 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:BestToGarbage.ViewModels"
+        xmlns:converter="clr-namespace:BestToGarbage.Converter"
+
+        x:DataType="vm:RankingMemberWindowViewModel"
+        Height="400" Width="350"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="BestToGarbage.Views.RankingMemberWindow"
+        Title="排名成员">
+    <Window.Resources>
+        <!-- 定义路径到Bitmap的转换器 -->
+        <converter:FilePathToBitmapConverter x:Key="FilePathToBitmapConverter"/>
+    </Window.Resources>
+    <Grid RowDefinitions="Auto,*" Margin="10,30" PointerPressed="InputElement_OnPointerPressed">
+        <DockPanel LastChildFill="False">
+            <TextBlock
+                Text="添加图片"
+                DockPanel.Dock="Left"
+                VerticalAlignment="Center" />
+            <Button
+                Command="{Binding AddImgMemberCommand}"
+                CommandParameter="{Binding $parent[Window]}"
+                Content="选择图片"
+                DockPanel.Dock="Right"
+                VerticalAlignment="Center" />
+        </DockPanel>
+        <ScrollViewer Grid.Row="1">
+            <ItemsControl ItemsSource="{Binding Items}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel
+
+                            Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button 
+                            Command="{Binding MovingMemberCommand}"
+                            CommandParameter="{Binding .}"
+                            Padding="10">
+                            <Button.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem
+                                        
+                                        Command="{Binding NotShowMemberCommand}"
+                                        Header="取消显示" />
+                                    <MenuItem
+                                        CommandParameter="{Binding .}"
+                                        Command="{Binding ShowMemberCommand}"
+                                        Header="显示" />
+                                </ContextMenu>
+                            </Button.ContextMenu>
+                            <StackPanel
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                                <Image
+                                    Height="100"
+                                    Width="100"
+                                    Source="{Binding ImgPath, Converter={StaticResource FilePathToBitmapConverter}}" />
+                                <TextBlock Text="{Binding Name}"></TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Window>
